@@ -1,0 +1,56 @@
+$extra-small: 320px
+$small: 768px
+$medium: 970px
+$large: 1200px
+
+@mixin respond-to($media)
+  @if $media == handhelds
+     @media only screen and (max-width: $extra-small)
+      @content
+
+  @else if $media == small-screens
+    @media only screen and (min-width: $extra-small + 1) and (max-width: $small - 1)
+      @content
+
+  @else if $media == medium-screens
+    @media only screen and (min-width: $small + 1) and (max-width: $large - 1)
+      @content
+
+  @else if $media == wide-screens
+    @media only screen and (min-width: $large)
+      @content
+
+//Media parameters
+
+@include respond-to(handhelds)
+  [class~=extra]
+    display: none
+  footer
+    height: 240px
+    padding-left: 40px
+
+
+@include respond-to(small-screens)
+  .navbar-nav li a
+    width: auto
+    margin: 0
+    padding: 0
+  [class~=extra]
+    display: none
+  footer
+    height: 200px
+
+@include respond-to(medium-screens)
+  .navbar-nav li a
+    margin: 0
+  .pagination
+    max-width: 500px
+  footer
+    height: 160px
+
+@include respond-to(wide-screens)
+  .navbar-nav li a
+    margin: 0 35px
+  footer
+    height: 80px
+    padding: 20px 40px 0 40px
