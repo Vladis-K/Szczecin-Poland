@@ -109,14 +109,14 @@ header {
   font-size: 14px;
   color: #f4f4f4; }
 
-.buttons ul {
+.buttons-dotted ul {
   display: inline-block; }
 
-.buttons ul li {
+.buttons-dotted ul li {
   display: inline-block;
   text-decoration: none; }
 
-div.buttons {
+div.buttons-dotted {
   position: absolute;
   bottom: 7px;
   right: 25px;
@@ -170,7 +170,6 @@ div .lead-column {
   color: #333; }
 
 #pictures, #picture-shadow {
-  display: block;
   width: 80px;
   height: 80px;
   margin: 0 10px 5px 0;
@@ -195,7 +194,7 @@ div .lead-column {
   position: absolute;
   padding-left: 21px;
   padding-top: 21px;
-  margin: auto 0;
+  margin: auto;
   font-size: 30px;
   font-weight: 800;
   overflow: hidden; }
