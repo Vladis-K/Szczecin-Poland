@@ -145,12 +145,18 @@ div.buttons-dotted
 .active
 	background-color: $dotted-color
 
-//Sections with columns
+//Sections with columns. Row 1
 
 section#description-1
 	margin: 0
 	padding: 0 40px 
 	background: linear-gradient(to right, rgba(245,245,245,1), rgba(255,255,255,1))	
+
+div .lead-column
+	height: 100px
+	border-bottom: 1px solid $primary-color
+	font-size: 14px
+	color: $text-color
 
 .lead-2
 	background-color: $mid-column-color
@@ -161,12 +167,13 @@ img#mid
 	width: 100%
 	max-width: 400px
 
+//Sections with columns. Row 2.
 section#description-2
 	@extend section#description-1
 	background: linear-gradient(to right, rgba(227,221,212,1), rgba(245,243,239,1))
 
-div .lead-column
-	height: 120px
+div .lead-column-2
+	height: 85px
 	border-bottom: 1px solid $primary-color
 	font-size: 14px
 	color: $text-color
