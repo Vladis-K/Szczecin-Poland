@@ -85,12 +85,70 @@ div#collapse-1
 	margin: 0 35px
 
 //Header
+
 header
 	position: relative
-	background: url(../img/header.jpg) no-repeat
+//  background: url(../img/header.jpg) no-repeat
 	background-size: cover
 	height: 580px
 	margin: 7px 0 0 0
+
+//Slider
+
+#slider-1
+	margin-top: 7px
+	background: url(../img/header.jpg) no-repeat
+	position: relative
+	background-size: cover
+	height: 580px
+	width: 100%
+	margin: 0
+	padding: 0
+	overflow: hidden
+
+.all-slides
+	position: relative
+	list-style-type: none
+	padding: 0
+	width: 100%
+	overflow: hidden
+
+.all-slides>li,
+.all-slides>li img
+	float: left
+	width: 100%
+	margin: 0
+	padding: 0
+	overflow: hidden
+
+
+#prevSlide
+	position: absolute
+	text-align: center
+	width: 50px
+	height: 50px
+	background-color: rgba(245,243,239,.3)
+	border-radius: 50% 
+	padding: 0
+	top: 170px
+	left: 50px
+
+#nextSlide
+	position: absolute
+	text-align: center
+	width: 50px
+	height: 50px
+	background-color: rgba(245,243,239,.3)
+	border-radius: 50% 
+	padding: 0
+	top: 170px
+	right: 50px
+
+.controls button
+	border: none
+
+.glyphicon
+	color: $mid-column-color
 
 //Lower part of header
 .under-slider
@@ -172,7 +230,7 @@ section#description-2
 	@extend section#description-1
 	background: linear-gradient(to right, rgba(227,221,212,1), rgba(245,243,239,1))
 
-div .lead-column-2
+.lead-column-2
 	height: 85px
 	border-bottom: 1px solid $primary-color
 	font-size: 14px
@@ -280,7 +338,7 @@ footer p
 		line-height: 40px
 	li a:hover
 		color: #000
-
+		
 .last
 	height: 80px
 	width: 100%	
