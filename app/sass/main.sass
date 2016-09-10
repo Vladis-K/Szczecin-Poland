@@ -115,11 +115,14 @@ header
 .carousel-control:hover
 	background-color: transparent
 
+.dotted ul
+	position: absolute
+	width: 100%
 
 .dotted ul li
 	position: relative
 	top: 10px
-	left: 640px
+	left: 20%
 	text-decoration: none
 	border: none
 	width: 12px
@@ -286,6 +289,13 @@ span.emphasized
 	color: $dotted-color
 	font-size: 18px	
 
+div.lead-5 > img
+	margin: 0
+	padding: 0
+	width: 100%
+	height: auto
+
+
 //Pointer
 #pointer img
 	height: 20px
@@ -307,25 +317,24 @@ footer p
 	right: 0
 	list-style-type: none	
 
-.social-icon
-	li
-		display: inline-block
+.social-icon li
+	display: inline-block
 
-	li a
-		width: auto
-		height: 8px
-		display: block
-		text-decoration: none
-		margin: 0 15px
-		color: $text-color
-		text-transform: uppercase
+.social-icon li a img
+	position: relative
+	bottom: 10px
+	height: 35px
+	display: block
+	text-decoration: none
+	margin: 0 10px 10px 0
+	padding: 0
 
 .down-menu
 	li
 		display: inline-block
 	li a
 		display: block
-		margin-top: 8px
+		margin: 8px 8px 0 0
 		color: $text-color
 		width: auto
 		text-decoration: underline

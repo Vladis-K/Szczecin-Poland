@@ -5,15 +5,16 @@ $large: 1200px
 
 @mixin respond-to($media)
   @if $media == handhelds
-     @media only screen and (max-width: $extra-small)
+    @media only screen and (max-width: $extra-small)
       @content
+
 
   @else if $media == small-screens
     @media only screen and (min-width: $extra-small + 1) and (max-width: $small - 1)
       @content
 
   @else if $media == medium-screens
-    @media only screen and (min-width: $small + 1) and (max-width: $large - 1)
+    @media only screen and (min-width: $small) and (max-width: $large - 1)
       @content
 
   @else if $media == wide-screens
@@ -25,12 +26,22 @@ $large: 1200px
 @include respond-to(handhelds)
   [class~=extra]
     display: none
-  footer
-    height: 240px
+footer
+    height: 400px
     padding-left: 40px
 .social-icon li a
     margin: 15px
     padding: 0
+.dotted ul li
+    position: relative
+    top: 10px
+    left: 10%
+
+.dotted ul li
+    position: relative
+    top: 10px
+    left: 10%
+
 
 @include respond-to(small-screens)
   .navbar-nav li a
@@ -40,7 +51,11 @@ $large: 1200px
   [class~=extra]
     display: none
   footer
-    height: 200px
+    height: 300px
+.dotted ul li
+  position: relative
+  top: 10px
+  left: 10%
 
 @include respond-to(medium-screens)
   .navbar-nav li a
@@ -48,7 +63,11 @@ $large: 1200px
   .pagination
     max-width: 500px
   footer
-    height: 160px
+    height: 200px
+.dotted ul li
+  position: relative
+  top: 10px
+  left: 20%
 
 @include respond-to(wide-screens)
   .navbar-nav li a

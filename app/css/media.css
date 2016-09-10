@@ -1,13 +1,24 @@
 @media only screen and (max-width: 320px) {
   [class~=extra] {
-    display: none; }
-  footer {
-    height: 240px;
-    padding-left: 40px; } }
+    display: none; } }
+
+footer {
+  height: 400px;
+  padding-left: 40px; }
 
 .social-icon li a {
   margin: 15px;
   padding: 0; }
+
+.dotted ul li {
+  position: relative;
+  top: 10px;
+  left: 10%; }
+
+.dotted ul li {
+  position: relative;
+  top: 10px;
+  left: 10%; }
 
 @media only screen and (min-width: 321px) and (max-width: 767px) {
   .navbar-nav li a {
@@ -17,15 +28,25 @@
   [class~=extra] {
     display: none; }
   footer {
-    height: 200px; } }
+    height: 300px; } }
 
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+.dotted ul li {
+  position: relative;
+  top: 10px;
+  left: 10%; }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .navbar-nav li a {
     margin: 0; }
   .pagination {
     max-width: 500px; }
   footer {
-    height: 160px; } }
+    height: 200px; } }
+
+.dotted ul li {
+  position: relative;
+  top: 10px;
+  left: 20%; }
 
 @media only screen and (min-width: 1200px) {
   .navbar-nav li a {
