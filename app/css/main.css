@@ -91,37 +91,40 @@ div#collapse-1 {
 
 header {
   position: relative;
-  background-size: cover;
-  height: 580px;
+  height: 680px;
   margin: 7px 0 0 0; }
 
-#slider-1 {
-  margin-top: 7px;
-  background-repeat: no-repeat;
+.carousel-inner > .item > img {
+  height: 680px;
+  width: auto;
+  margin: auto; }
+
+.carousel-control,
+.carousel-control:hover {
+  background-color: transparent; }
+
+.dotted ul li {
   position: relative;
-  background-size: cover;
-  height: 580px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
+  top: 10px;
+  left: 640px;
+  text-decoration: none;
+  border: none;
+  width: 12px;
+  height: 12px;
+  background-color: #e8e8e8;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 3px; }
 
-.all-slides {
-  position: relative;
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  overflow: hidden; }
+.dotted ul li.active {
+  border: none;
+  background-color: #a80c1e;
+  margin: 0 3px; }
 
-.all-slides > li,
-.all-slides > li img {
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
+.controls a {
+  border: none; }
 
-#prevSlide {
+.prevSlide {
   position: absolute;
   text-align: center;
   width: 50px;
@@ -133,7 +136,7 @@ header {
   top: 170px;
   left: 40px; }
 
-#nextSlide {
+.nextSlide {
   position: absolute;
   text-align: center;
   width: 50px;
@@ -144,9 +147,6 @@ header {
   padding: 0;
   top: 170px;
   right: 40px; }
-
-.controls button {
-  border: none; }
 
 .glyphicon {
   color: #231f20; }
@@ -178,31 +178,6 @@ header {
   font-size: 14px;
   color: #f4f4f4; }
 
-.buttons-dotted ul {
-  display: inline-block; }
-
-.buttons-dotted ul li {
-  display: inline-block;
-  text-decoration: none; }
-
-div.buttons-dotted {
-  position: absolute;
-  bottom: 7px;
-  right: 25px;
-  margin: 0;
-  z-index: 15; }
-
-.indicators {
-  width: 12px;
-  height: 12px;
-  background-color: #e8e8e8;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  margin: 0 7px 0 0; }
-
-.active {
-  background-color: #a80c1e; }
-
 section#description-1, section#description-2 {
   margin: 0;
   padding: 0 40px;
@@ -210,7 +185,7 @@ section#description-1, section#description-2 {
   background: -webkit-linear-gradient(left, whitesmoke, white);
   background: linear-gradient(to right, whitesmoke, white); }
 
-div .lead-column {
+div.lead-column {
   height: 100px;
   border-bottom: 1px solid #e8e8e8;
   font-size: 14px;

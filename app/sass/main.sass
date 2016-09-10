@@ -75,7 +75,6 @@ nav.navbar
 	box-shadow: inset 0px 5px 20px -11px rgba(135,135,135,1)
 	z-index: 2
 
-
 div#collapse-1
 	position: absolute
 	bottom: 0
@@ -103,39 +102,44 @@ div#collapse-1
 
 header
 	position: relative
-	background-size: cover
-	height: 580px
+	height: 680px
 	margin: 7px 0 0 0
 
-#slider-1
-	margin-top: 7px
-	background-repeat: no-repeat
+//Slider
+.carousel-inner > .item > img
+	height: 680px
+	width: auto
+	margin: auto
+
+.carousel-control,
+.carousel-control:hover
+	background-color: transparent
+
+
+.dotted ul li
 	position: relative
-	background-size: cover
-	height: 580px
-	width: 100%
-	margin: 0
-	padding: 0
-	overflow: hidden
+	top: 10px
+	left: 640px
+	text-decoration: none
+	border: none
+	width: 12px
+	height: 12px
+	background-color: $primary-color
+	border-radius: 50%
+	margin: 0 3px
 
-.all-slides
-	position: relative
-	list-style-type: none
-	padding: 0
-	width: 100%
-	overflow: hidden
 
-.all-slides>li,
-.all-slides>li img
-	float: left
-	width: 100%
-	margin: 0
-	padding: 0
-	overflow: hidden
-
+.dotted ul li.active
+	border: none
+	background-color: $dotted-color
+	margin: 0 3px
 
 //Side pagination
-#prevSlide
+
+.controls a
+	border: none
+
+.prevSlide
 	position: absolute
 	text-align: center
 	width: 50px
@@ -146,7 +150,7 @@ header
 	top: 170px
 	left: 40px
 
-#nextSlide
+.nextSlide
 	position: absolute
 	text-align: center
 	width: 50px
@@ -156,9 +160,6 @@ header
 	padding: 0
 	top: 170px
 	right: 40px
-
-.controls button
-	border: none
 
 .glyphicon
 	color: $mid-column-color
@@ -191,30 +192,6 @@ header
 	font-size: 14px
 	color: $main-color
 
-//Pagination
-.buttons-dotted
-	ul
-		display: inline-block
-	ul li
-		display: inline-block
-		text-decoration: none
-
-div.buttons-dotted
-	position: absolute
-	bottom: 7px
-	right: 25px
-	margin: 0
-	z-index: 15
-
-.indicators
-	width: 12px
-	height: 12px
-	background-color: $primary-color
-	border-radius: 50%
-	margin: 0 7px 0 0
-
-.active
-	background-color: $dotted-color
 
 //Sections with columns. Row 1
 
@@ -223,7 +200,7 @@ section#description-1
 	padding: 0 40px 
 	background: linear-gradient(to right, rgba(245,245,245,1), rgba(255,255,255,1))	
 
-div .lead-column
+div.lead-column
 	height: 100px
 	border-bottom: 1px solid $primary-color
 	font-size: 14px
